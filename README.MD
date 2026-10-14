@@ -1,5 +1,5 @@
 # PNG2Bitmap
-small program for generating arrays of bitmaps for max7219 matrices (or anything else)
+small program for generating arrays of bitmaps for max7219 matrices (protogen format)
 
 # How to use
 1. Get prebuilt exectuable
