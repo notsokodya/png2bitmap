@@ -1,2 +1,5 @@
 # built executbles n etc
 build/
+
+# ide
+.vscode
