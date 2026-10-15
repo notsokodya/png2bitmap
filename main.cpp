@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb/stb_image.h"
@@ -52,6 +53,14 @@ int main(int argc, char* argv[]) {
 
         bitmap[x] = column;
     }
+
+    std::cout << "{";
+    for (int x = 0; x < width; x++) {
+        if (x != 0) std::cout << ", ";
+
+        std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << (unsigned int) bitmap[x];
+    }
+    std::cout << "}";
 
     stbi_image_free(img);
     return 0;
