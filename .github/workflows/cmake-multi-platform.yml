@@ -43,7 +43,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       with:
-      submodules: recursive
+        submodules: recursive
 
     - name: Set reusable strings
       id: strings
