@@ -56,7 +56,7 @@ jobs:
       run: cmake --build ${{steps.strings.outputs.build-output-dir}} --config ${{matrix.build_type}}
 
     - name: Upload artifacts
-      run: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
         name: png2bitmap-${{matrix.os}}
         path: ${{steps.strings.outputs.build-output-dir}}
