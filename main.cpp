@@ -18,11 +18,15 @@ int main(int argc, char* argv[]) {
 
     if (img == NULL) {
         std::cerr << "Failed to load image";
+
+        stbi_image_free(img);
         return 0;
     }
 
     if (width > 32) {
         std::cerr << "The image is too big for protogen bawoop";
+
+        stbi_image_free(img);
         return 0;
     }
 
